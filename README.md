@@ -16,3 +16,8 @@ ParCo는 "raise left hand and kick the door with right foot"과 같이 문장에
 ## Demo
 
 ## Conclusion and Future Work
+- Method1: VQ-VAE에 Positional Embedding을 추가하여 학습한 모델은 기존 ParCo 모델의 동작보다는 정확하고 자연스러운 동작을 생성해내지만, 순서가 섞이는 경우가 자주 발생했다.
+- Method2:  순서 보존, 동작 완전성, 자연스러움 모든 면에서 가장 높은 성능을 보였으며 의미정보와 시간 정보의 분리 및 병합 처리 구조가 효과적임을 확인하였다. 여전히 일부 한계가 존재하지만, 기존 ParCo 대비 명확한 개선을 달성하였다. 
+
+
+
