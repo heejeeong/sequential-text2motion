@@ -12,6 +12,13 @@ ParCo(Part-Coordinating Text-to-Motion Syenthesis)는 텍스트로부터 사람�
 
 
 ## Code Instruction
+이 프로젝트는 ParCo(Part Coordinating Motion Synthesis)를 기반으로 하고 있다. dataset 준비, 모델 학습, 모션 생성 및 시각화 과정은 원본 ParCo의 안내를 따른다. (설치 및 실행은 아래 링크를 참고하세요)
+https://github.com/qrzou/ParCo
+
+### 본 프로젝트에서 수정한 내용:
+- batch_size 64 \  로 설정
+- vqvae에 postional embedding 추가 모델은 pe_train_ParCo_vq.py와 pe_train_ParCo_trans.py로 학습
+- clip에 gru 추가한 transformer 모델은 train_ParCo_vq.py 파일과 train_ParCo_CLIPwithGRU.py로 학습
 
 ## Demo
 
