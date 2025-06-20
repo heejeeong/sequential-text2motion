@@ -21,6 +21,23 @@ https://github.com/qrzou/ParCo
 - clip에 gru 추가한 transformer 모델은 train_ParCo_vq.py 파일과 train_ParCo_CLIPwithGRU.py로 학습
 
 ## Demo
+<table>
+  <tr>
+    <td align="center">
+      <img src="./demo/parco.gif" width="200" /><br/>
+      ParCo 모션
+    </td>
+    <td align="center">
+      <img src="./demo/vqvae.gif" width="200" /><br/>
+      VQVAE에 PE 추가 모션
+    </td>
+    <td align="center">
+      <img src="./demo/clip.gif" width="200" /><br/>
+      CLIP에 GRU 추가 모션
+    </td>
+  </tr>
+</table>
+
 
 ## Conclusion and Future Work
 기존 ParCo 모델은 문장 내 순차적 동작 정보를 충분히 반영하지 못해 부정확하거나 부자연스러운 모션을 생성했다. 본 프로젝트를 통해 VQ-VAE + Positional Embedding과 CLIP + GRU 기반 Text Encoder의 두 가지 방법을 탐색하여 ParCo의 이러한 한계를 개선하고자 했다.
